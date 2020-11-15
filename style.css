@@ -1,7 +1,44 @@
+body{
+    display: grid;
+    place-items: center;
+}
+.all{
+    display: grid;
+    place-items: center;
+    width: min(100%, 1000px);
+}
 .header-right{
     float: right;
 }
+.logo{
+    float: left;
+}
 header{
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    width: inherit;
+}
+.links{
+    float: right;
+}
+.intro{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+.works{
+}
+.work{
+    flex-wrap: wrap;
+    display: flex;
+}
+#work2{
+    flex-direction: row-reverse
+}
+.main{
+    display: grid;
+    place-items: center;
+}
+img{
+}
+.end{
+    width: 50%;
 }
