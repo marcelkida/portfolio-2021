@@ -1,0 +1,7 @@
+.header-right{
+    float: right;
+}
+header{
+    position: sticky;
+    position: -webkit-sticky;
+}
