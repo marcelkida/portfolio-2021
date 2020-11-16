@@ -1,12 +1,13 @@
 body{
     display: grid;
     place-items: center;
-    background-color: lavender;
+    background-color: #181818;
+    margin: 0;
 }
 .all{
     display: grid;
     place-items: center;
-    width: min(100%, 1000px);
+    width: min(90vw, 1000px);
 }
 .header-right{
     float: right;
@@ -14,9 +15,14 @@ body{
 .logo{
     float: left;
 }
+.active{
+    padding-right: 4vw;
+}
 header{
     position: fixed;
     width: inherit;
+    height: 10vh;
+    padding-top: 5vh;
 }
 .links{
     float: right;
@@ -24,22 +30,79 @@ header{
 .intro{
     padding-top: 15vh;
     padding-bottom: 15vh;
+    width: min(90vw, 1000px);
+}
+h1{
+    color: whitesmoke;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: clamp(64px, 10vw, 76px);
+}
+h2{
+    color: #828282;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: clamp(32px, 8vw, 48px);
+}
+h4{
+    color:#828282;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+}
+h3{
+    color: whitesmoke;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: min(4vw, 24px);
 }
 .works{
+    width: min(90vw, 1000px);
 }
 .work{
     flex-wrap: wrap;
     display: flex;
+    padding-bottom: 5vh;
 }
 #work2{
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+    text-align: right;
 }
 .main{
     display: grid;
     place-items: center;
 }
-img{
+canvas{
+    width: inherit;
+}
+#can1{
+    background-color: #2CCCC3;
+}
+#can2{
+    background-color: #FACD3D;
+}
+#can3{
+    background-color: #E60576;
+}
+.thumb{
+    opacity: 50%;
+}
+.thumb:hover{
+    opacity: 100%;
+}
+.image{
+    width: min(100%,500px);
+}
+a{
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+a, a:visited{
+    color: #5626C4;
+}
+.info{
+    width: min(100%,400px);
 }
 .end{
-    width: 50%;
+    width: min(90vw, 1000px);
 }
