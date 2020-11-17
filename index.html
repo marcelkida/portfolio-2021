@@ -1,16 +1,19 @@
-<html>
+<html lang="en">
     <head>
         <meta charset=“UTF-8”>
         <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Marcel Kida</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="all">
             <header>
-                <a href="#default" class="logo">Marcel Kida</a>
+                <div class="logo" id="anim">
+
+                </div>
                 <div class="header-right">
                 <a class="active" href="#home">Home</a>
                 <a href="#about">About</a>
@@ -18,13 +21,14 @@
             </header>
             <div class="main">
                 <div class="intro">
-                    <h1>Hello, I'm Marcel</h1>
+                    <h1>Hello!</h1>
                     <h2>I'm a designer/developer and available for freelance projects.</h2>
                 </div>
                 <div class="works">
                     <div id="work1" class="work">
                         <div class="image">
-                            <canvas class="thumb" id="can1"></canvas>                        </div>
+                            <canvas class="thumb" id="can1"></canvas>
+                        </div>
                         <div class="info">
                             <h3>
                                 SINO Website Design | 2020
@@ -51,7 +55,8 @@
                     </div>
                     <div id="work3" class="work">
                         <div class="image">
-                            <canvas class="thumb" id="can3"></canvas>                        </div>
+                            <canvas class="thumb" id="can3"></canvas>
+                        </div>
                         <div class="info">
                             <h3>
                                 Motion Design Reel | 2020
@@ -71,5 +76,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

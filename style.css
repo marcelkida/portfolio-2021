@@ -1,7 +1,8 @@
+
 body{
     display: grid;
     place-items: center;
-    background-color: #181818;
+    background-color: white;
     margin: 0;
 }
 .all{
@@ -14,6 +15,8 @@ body{
 }
 .logo{
     float: left;
+    height: 25%;
+    width: 10vh;
 }
 .active{
     padding-right: 4vw;
@@ -32,28 +35,21 @@ header{
     padding-bottom: 15vh;
     width: min(90vw, 1000px);
 }
+h1,h2,h3,h4,a{
+    color: black;
+    font-family: monospace;
+}
 h1{
-    color: whitesmoke;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
-    font-size: clamp(64px, 10vw, 76px);
 }
 h2{
-    color: #828282;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
-    font-size: clamp(32px, 8vw, 48px);
-}
-h4{
-    color:#828282;
-    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(16px, 4vw, 24px);
     font-weight: 400;
 }
 h3{
-    color: whitesmoke;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
     font-size: min(4vw, 24px);
+}
+h4{
+
 }
 .works{
     width: min(90vw, 1000px);
@@ -61,7 +57,7 @@ h3{
 .work{
     flex-wrap: wrap;
     display: flex;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
 }
 #work2{
     flex-direction: row-reverse;
@@ -73,6 +69,8 @@ h3{
 }
 canvas{
     width: inherit;
+    height: 40vh;
+    
 }
 #can1{
     background-color: #2CCCC3;
@@ -85,23 +83,30 @@ canvas{
 }
 .thumb{
     opacity: 50%;
+    transition: .5s;
+    box-shadow: 10px 10px 5px whitesmoke;
 }
 .thumb:hover{
     opacity: 100%;
+    transform: scale(1.02);
+    box-shadow: 30px 30px 10px whitesmoke;
 }
 .image{
     width: min(100%,500px);
 }
 a{
     text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
+    
     font-weight: 700;
 }
 a, a:visited{
-    color: #5626C4;
+    color: black;
 }
 .info{
     width: min(100%,400px);
+    z-index: 1;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .end{
     width: min(90vw, 1000px);
