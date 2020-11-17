@@ -18,8 +18,11 @@ body{
     height: 25%;
     width: 10vh;
 }
-.active{
+#home{
     padding-right: 4vw;
+}
+.active{
+    color: blue !important;
 }
 header{
     position: fixed;
