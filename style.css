@@ -24,6 +24,9 @@ body{
     height: 25%;
     width: 10vh;
 }
+#wobble path{
+
+}
 #home{
     padding-right: 4vw;
 }
@@ -121,9 +124,7 @@ a, a:visited{
     height: 10vh;
     margin-top: 10vh;
 }
-i{
-    margin-left: 1vw;
-}
+
 button {
     font-family: monospace;
     overflow: hidden;
@@ -177,4 +178,20 @@ button:hover span{
 }
 button:hover .email{
     top: 12px;
+}
+.links{
+    display: flex;
+    width: 30%;
+
+    justify-content: space-between;
+}
+i{
+    transition: all .5s;
+    width: auto;
+    height: auto;
+}
+
+.links i:hover{
+    transform: rotate(90deg);
+    transform: scale(1.05);
 }

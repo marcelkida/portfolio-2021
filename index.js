@@ -5,6 +5,7 @@ var logoanim = bodymovin.loadAnimation({
   loop: false,
   autoplay: true,
   path: 'data.json',
+  rendererSettings: {id: 'wobble'}
 })
 logoanim.onComplete = function () {
   console.log("complete");
@@ -29,3 +30,30 @@ document.getElementById("emailbutton").addEventListener("click", function() {
     $("#copytext").text("email copied");
     setTimeout(() => {$("#copytext").text("copy email");}, 2000)
 })
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+  color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+  }
+
+function colorWheel(){
+  color = setInterval(function(){
+    $("#wobble path").css("fill", getRandomColor())
+  }, 100);
+}
+$("#anim").mouseenter(
+  function(){
+    console.log("hover");
+    colorWheel()
+  }
+)
+$("#anim").mouseleave(
+  function(){
+    console.log("out");
+    clearInterval(color)
+    $("#wobble path").css("fill", "black")
+  }
+)
