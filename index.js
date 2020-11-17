@@ -20,3 +20,12 @@ logoanim.onComplete = function () {
     console.log('f');
   }
 }
+document.getElementById("emailbutton").addEventListener("click", function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#emailtext").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    $("#copytext").text("email copied");
+    setTimeout(() => {$("#copytext").text("copy email");}, 2000)
+})

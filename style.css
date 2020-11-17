@@ -1,4 +1,7 @@
-
+html{
+    font-size: 1.5em;
+    font-family: monospace;
+}
 body{
     display: grid;
     place-items: center;
@@ -8,7 +11,7 @@ body{
 .all{
     display: grid;
     place-items: center;
-    width: min(90vw, 1000px);
+    width: min(90vw, 1200px);
 }
 .main{
     width: 100%;
@@ -38,8 +41,8 @@ header{
     float: right;
 }
 .intro{
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
     width: 100%;
     margin: 0;
 }
@@ -48,17 +51,14 @@ h1,h2,h3,h4,a{
     font-family: monospace;
 }
 h1{
-    font-size: clamp(32px, 8vw, 48px);
 }
 h2{
-    font-size: clamp(16px, 4vw, 24px);
     font-weight: 400;
 }
 h3{
-    font-size: min(4vw, 24px);
 }
 h4{
-
+    font-weight: 400;
 }
 .works{
     width: 100%;
@@ -77,8 +77,8 @@ h4{
     place-items: center;
 }
 canvas{
-    width: inherit;
-    height: inherit;  
+    width: 100%;
+    height: 100%;  
 }
 #can1{
     background-color: #2CCCC3;
@@ -100,12 +100,11 @@ canvas{
     box-shadow: 30px 30px 10px whitesmoke;
 }
 .image{
-    width: min(100%, 500px);
-    height: min(45vw, 500px);
+    width: min(100%, 600px);
+    height: min(90vw, 600px);
 }
 a{
     text-decoration: none;
-    
     font-weight: 700;
 }
 a, a:visited{
@@ -118,5 +117,64 @@ a, a:visited{
     padding-right: 5%;
 }
 .end{
-    width: min(90vw, 1000px);
+    width: 100%;
+    height: 10vh;
+    margin-top: 10vh;
+}
+i{
+    margin-left: 1vw;
+}
+button {
+    font-family: monospace;
+    overflow: hidden;
+    padding: 12px 12px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+
+    background-color: blue;
+    color: #fff;
+    border: 0 none;
+    box-shadow: 5px 5px 5px whitesmoke;
+  
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    display: flex;
+    justify-content: center;
+    border-radius: 36px;
+} 
+button:hover {
+    transition: all 150ms linear;
+
+    opacity: .85;
+} 
+button:active {
+    transition: all 150ms linear;
+    opacity: .75;
+}
+button:focus {
+    outline: 0px;
+    outline-offset: -4px;
+}
+button span{
+    transition: all .2s;
+    display: inline-block;
+}
+.email{
+    text-align: center;
+    position: absolute;
+    transition: all .2s;
+    top: -100%;
+}
+button:hover span{
+    transform: translateY(300%);
+}
+button:hover .email{
+    top: 12px;
 }
