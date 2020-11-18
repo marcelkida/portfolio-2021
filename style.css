@@ -126,6 +126,7 @@ a, a:visited{
 }
 
 button {
+    top: 25%;
     font-family: monospace;
     overflow: hidden;
     padding: 12px 12px;
@@ -186,12 +187,19 @@ button:hover .email{
     justify-content: space-between;
 }
 i{
-    transition: all .5s;
-    width: auto;
-    height: auto;
 }
-
-.links i:hover{
-    transform: rotate(90deg);
-    transform: scale(1.05);
+#drib:hover{
+    color:#EA4C89;
+}
+#twit:hover{
+    color:#08a0e9;
+}
+#inst:hover{
+    color:#DD2A7B;
+}
+#yout:hover{
+    color:#E62117;
+}
+#link:hover{
+    color:#0077B5;
 }
