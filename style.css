@@ -51,7 +51,7 @@ header{
 }
 #ghost{
     position: absolute;
-    width: 10%;
+    width: max(10vh, 10%);
     z-index: -1;
     margin-top: -3%;
 }
@@ -166,7 +166,7 @@ button {
 } 
 button:hover {
     transition: all 150ms linear;
-
+    transform: scale(1.1);
     opacity: .85;
 } 
 button:active {
@@ -215,4 +215,7 @@ i{
 }
 #link:hover{
     color:#0077B5;
+}
+#gith:hover{
+    color: #5c6b7a;
 }
