@@ -49,9 +49,22 @@ header{
     width: 100%;
     margin: 0;
 }
+#ghost{
+    position: absolute;
+    width: 10%;
+    z-index: -1;
+    margin-top: -3%;
+}
 h1,h2,h3,h4,a{
     color: black;
     font-family: monospace;
+}
+h1,h2{
+    text-shadow:
+    1px 1px 10px rgb(255,255,255),
+    1px -1px 10px rgb(255,255,255),
+    -1px -1px 10px rgb(255,255,255),
+    -1px 1px 10px rgb(255,255,255);}
 }
 h1{
 }
