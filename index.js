@@ -21,6 +21,22 @@ logoanim.onComplete = function () {
     console.log('f');
   }
 }
+var wipanim = bodymovin.loadAnimation({
+  container: document.getElementById('wipanim2'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'datawip.json',
+  rendererSettings: {id: 'wip', viewBoxOnly: "true"}
+})
+var wipanim = bodymovin.loadAnimation({
+  container: document.getElementById('wipanim3'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'datawip.json',
+  rendererSettings: {id: 'wip', viewBoxOnly: "true"}
+})
 document.getElementById("emailbutton").addEventListener("click", function() {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -57,3 +73,42 @@ $("#anim").mouseleave(
     $("#wobble path").css("fill", "black")
   }
 )
+
+window.onload = function () {
+  lax.init()
+
+  lax.addDriver('scrollY', function () {
+    return window.scrollY
+  }, { inertiaEnabled: true })
+
+  lax.addElements(".thumb", {
+    scrollY: {
+      perspective: [
+        [0],
+        [1000],
+      ],
+      rotateX: [
+        [0],
+        [0],
+        {
+          inertia: -1
+        }
+      ],
+
+      translateY: [
+        [0],
+        [0],
+        {
+          inertia: -1
+        }
+      ],
+      brightness: [
+        [0],
+        [1],
+        {
+          inertia: -0.01
+        }
+      ]
+    },
+  })
+}
