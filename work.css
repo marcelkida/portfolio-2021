@@ -1,15 +1,15 @@
 .banner{
     height: 70vh;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 .banner img{
     width: 180%;
     z-index: -1;
     position: relative;
 }
-h1 h2 h3 h4 p li ul{
-
+h1, h2, h3, h4, p, li, ul{
+    text-shadow: none !important;
 }
 .all{
 
@@ -24,7 +24,7 @@ img{
 transform: translateX(-50%);
 }
 .sec{
-    margin-top: 40%;
+    margin-top: 25%;
 }
 .stats{
 
