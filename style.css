@@ -124,7 +124,7 @@ h4{
     height: 100%;
 }
 .thumb{
-    opacity: 50%;
+    opacity: 100%;
     transition: .5s;
     box-shadow: 10px 10px 5px whitesmoke;
 }
