@@ -46,7 +46,7 @@ html{
 }
 #gifgrid{
     display: grid;
-    grid-template: repeat(4, 17.5vw) / repeat(4, 17.5vw);
+    grid-template: repeat(4, 15.5vw) / repeat(4, 15.5vw);
     justify-items: stretch;
 }
 .gif video{
