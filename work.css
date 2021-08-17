@@ -27,8 +27,8 @@ h1, h2, h3, h4, p, li, ul{
 header{
     z-index: 1;
 }
-img{
-    width: 130%;
+video{
+    width: 100%;
     margin-left: 50%;
 transform: translateX(-50%);
 }
@@ -49,7 +49,7 @@ html{
     grid-template: repeat(4, 17.5vw) / repeat(4, 17.5vw);
     justify-items: stretch;
 }
-.gif img{
+.gif video{
     width: 100%;
 }
 #gif1{
